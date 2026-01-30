@@ -14,7 +14,7 @@ def start(message):
         member = bot.get_chat_member(CHANNEL, user_id)
 
         if member.status in ["member", "administrator", "creator"]:
-           with open("guide-presents.pptx.pdf", "rb") as file:
+           with open("guide-presents.pdf", "rb") as file:
                 bot.send_document(
                 message.chat.id,
                 file,
